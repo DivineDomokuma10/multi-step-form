@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    transition: .4s;
+}
+.inpt{
+    @apply h-10 rounded-md pl-3 bg-transparent border font-semibold text-MarineBlue outline-none  border-LightGray focus:border-PurplishBlue
+}
+.active{
+    @apply w-9 h-9 rounded-full text-base text-black font-bold flex justify-center items-center bg-LightBlue
+}
+.inactive{
+    @apply w-9 h-9 rounded-full text-White text-base font-bold flex justify-center border items-center bg-transparent
+}
+.btn{
+    @apply bg-MarineBlue text-center font-semibold text-sm p-3 rounded-md text-White md:absolute md:w-fit md:right-0 md:bottom-0 hover:bg-btnHover
+}
+.routes-sec{
+    @apply w-full h-full px-2 py-2 md:w-3/4 md:ml-24 md:relative md:px-5
+}
+.inactive-plan{
+    @apply w-full flex items-center cursor-pointer rounded-md border px-3 py-2 mb-3 hover:border-PurplishBlue md:flex-col md:items-start
+}
+.active-plan{
+    @apply w-full flex items-center cursor-pointer rounded-md bg-Alabaster border-PurplishBlue border px-3 py-2 mb-3 hover:border-PurplishBlue md:flex-col md:items-start
+}
+.addon-active{
+    @apply w-full flex items-center justify-between px-3 py-4 cursor-pointer border border-PurplishBlue rounded-md bg-Alabaster hover:border-PurplishBlue
+}
+.addon-inactive{
+    @apply w-full flex items-center justify-between px-3 py-4 cursor-pointer border border-gray-200 rounded-md hover:border-PurplishBlue
+}
+.addon-check-active{
+    @apply px-1 py-2 border border-gray-200 rounded bg-PurplishBlue
+}
+.addon-check-inactive{
+    /* ani */
+    @apply px-1 py-2 border border-gray-200 rounded
+}
